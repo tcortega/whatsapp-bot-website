@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <div class="profile-card">
+    <div class="card-header">
+      <div class="pic">
+        <img src="img/pic.png" alt="">
+      </div>
+      <div class="dev-text">Contatos do Dev</div>
+      <div class="numbers">
+        <div class="sm item">
+          <a href="https://twitter.com/tcortega_" class="fab fa-twitter"></a>
+        </div>
+        <div class="border"></div>
+        <div class="sm item">
+          <a href="https://github.com/tcortega" class="fab fa-github"></a>
+        </div>
+        <div class="border"></div>
+        <div class="sm item">
+          <a href="https://www.instagram.com/tarcisioortega/" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="bot-text">Número Atualizado</div>
+      <div class="desc">+55 27 99987-6569</div>
+      <a href="https://api.whatsapp.com/send?phone=5527999876569&text=%23menu" class="contact-btn">Fale Comigo</a>
+    </div>
+  </div>
+  <script>
+    $(window).on('load', () => {
+      $('.loader-wrapper').fadeOut('slow');
+    })
+  </script>
+</body>
+
+</html>
