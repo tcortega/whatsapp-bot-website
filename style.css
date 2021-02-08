@@ -92,12 +92,13 @@ body{
   width: 400px;
   text-align: center;
   border-radius: 8px;
+  margin: 15px;
   overflow: hidden;
 }
 
 .card-header{
   background: #2c3a47;
-  padding: 60px 40px;
+  padding: 35px 40px;
 }
 
 .pic{
@@ -130,6 +131,13 @@ body{
   font-size: 28px;
   font-weight: 600;
   margin: 10px 0;
+}
+
+.support-text{
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 18px 10px 10px 10px;
 }
 
 .bot-text{
@@ -183,6 +191,54 @@ body{
   color: #f2f2f2;
 }
 
+.payment-btn{
+  display: inline-block;
+  padding: 8px 15px;
+  /* color: #e66767; */
+  border: 2px solid;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: .3s linear;
+}
+
+.payment-btn:hover{
+  background: #e66767;
+  color: #f2f2f2;
+}
+
+.picpay-btn {
+  color: #21C25E;
+}
+
+.paypal-btn {
+  color: #008cfc;
+}
+
+.picpay-btn:hover {
+  background: #21C25E;
+  color: #f2f2f2;
+}
+
+.pix-btn {
+  color: #32bcad;
+}
+
+.pix-btn:hover {
+  background: #32bcad;
+  color: #f2f2f2;
+}
+
+
+.paypal-btn:hover {
+  background: #008cfc;
+  color: #f2f2f2;
+}
+
+.logo-button-icon {
+	width: 1em;
+	vertical-align: 0em
+}
+
 .card-footer{
   background: #f4f4f4;
   padding: 30px 10px;
@@ -209,6 +265,12 @@ body{
 .border{
   width: 1px;
   height: 30px;
+  background: #bbb;
+}
+
+.hborder {
+  width: 100%;
+  height: 1px;
   background: #bbb;
 }
 

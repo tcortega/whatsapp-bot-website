@@ -34,6 +34,16 @@
           <a href="https://www.instagram.com/tarcisioortega/" class="fab fa-instagram"></a>
         </div>
       </div>
+      <div class="hborder"></div>
+      <div class="support-text">Ajude a manter o Bot</div>
+      <div>
+        <a href="https://picpay.me/tarcisio.ortega" class="payment-btn picpay-btn"><img src="img/picpay.png"
+            class="logo-button-icon"> PicPay</a>
+        <a href="https://www.paypal.com/donate?hosted_button_id=FMQL9JW5QV2ZG" class="payment-btn paypal-btn"><i
+            class="fab fa-paypal"> Paypal</i></a><br>
+        <a href="#" id="copyPix" class="payment-btn pix-btn"><img src="img/pix.png" class="logo-button-icon"> Chave
+          Pix</a>
+      </div>
     </div>
     <div class="card-footer">
       <div class="bot-text">Número Atualizado</div>
@@ -45,6 +55,32 @@
     $(window).on('load', () => {
       $('.loader-wrapper').fadeOut('slow');
     })
+
+    $('#copyPix').on('click', async () => {
+      await copyToClipboard()
+      let btnPix = document.getElementById("copyPix");
+      let txtBtn = btnPix.innerHTML
+
+      btnPix.innerHTML = '<i class="fas fa-check-circle"></i> Copiado com sucesso'
+      await delay(1500)
+      btnPix.innerHTML = txtBtn
+    })
+
+    const copyToClipboard = () => {
+      let textarea = document.createElement('textarea')
+      textarea.id = 'temp_element'
+      textarea.style.height = 0
+      document.body.appendChild(textarea)
+      textarea.value = "554dc0b2-8f12-4231-aefd-a1208e446c53"
+
+      let selector = document.querySelector('#temp_element')
+      selector.select()
+
+      document.execCommand('copy')
+      document.body.removeChild(textarea)
+    }
+
+    const delay = ms => new Promise(res => setTimeout(res, ms));
   </script>
 </body>
 
